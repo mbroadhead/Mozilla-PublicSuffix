@@ -23,7 +23,7 @@ my $builder = Module::Build->new(
 
 my $dat_file = "effective_tld_names.dat";
 my $get_new_list = $builder->y_n(
-    "Check for a new version of the Public Suffix List?", "N"
+    "Check for a new version of the Public Suffix List?", "y"
 );
 if ($get_new_list) {
     my $http = HTTP::Tiny->new( timeout => 6 );
